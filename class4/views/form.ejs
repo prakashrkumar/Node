@@ -1,0 +1,21 @@
+<%- include('header') %>
+    <div class="row mb-5">
+        <div class="col bg-light">
+            <h1>EJS Template</h1>
+        </div>
+    </div>
+    <div class="row mb-5">
+        <div class="col">
+            <form action="/submit" method="POST">
+                Enter Name: <input type="text" name="myname">
+                <br>
+                <input type="submit" > 
+            </form>
+        </div>
+</div>
+<div class="row my-3">
+    <div class="col .bg-warning">
+    <%= message  %>
+    </div>
+</div>
+   <%- include('footer') %>
